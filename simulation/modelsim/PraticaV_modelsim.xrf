@@ -1,9 +1,9 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/aluno/Documents/laoc2-pratica5/sm_cpu.v
-source_file = 1, C:/Users/aluno/Documents/laoc2-pratica5/PraticaV.v
-source_file = 1, C:/Users/aluno/Documents/laoc2-pratica5/bcd_7seg.v
-source_file = 1, C:/Users/aluno/Documents/laoc2-pratica5/sm_diretory.v
-source_file = 1, C:/Users/aluno/Documents/laoc2-pratica5/db/PraticaV.cbx.xml
+source_file = 1, C:/Users/Gabriel/Documents/git/laoc2-pratica5/sm_cpu.v
+source_file = 1, C:/Users/Gabriel/Documents/git/laoc2-pratica5/PraticaV.v
+source_file = 1, C:/Users/Gabriel/Documents/git/laoc2-pratica5/bcd_7seg.v
+source_file = 1, C:/Users/Gabriel/Documents/git/laoc2-pratica5/sm_diretory.v
+source_file = 1, C:/Users/Gabriel/Documents/git/laoc2-pratica5/db/PraticaV.cbx.xml
 design_name = PraticaV
 instance = comp, \SW[0]~I , SW[0], PraticaV, 1
 instance = comp, \SW[1]~I , SW[1], PraticaV, 1
