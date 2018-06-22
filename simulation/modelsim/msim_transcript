@@ -1,71 +1,105 @@
-# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
 # do PraticaV_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
 # vlib rtl_work
 # vmap work rtl_work
-# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/Aluno/Documents/laoc2-pratica5 {C:/Users/Aluno/Documents/laoc2-pratica5/PraticaV.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/aluno/Documents/laoc2-pratica5 {C:/Users/aluno/Documents/laoc2-pratica5/PraticaV.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module PraticaV
 # 
 # Top level modules:
 # 	PraticaV
-# vlog -vlog01compat -work work +incdir+C:/Users/Aluno/Documents/laoc2-pratica5 {C:/Users/Aluno/Documents/laoc2-pratica5/sm_cblock.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/aluno/Documents/laoc2-pratica5 {C:/Users/aluno/Documents/laoc2-pratica5/sm_cblock.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module sm_cblock
 # 
 # Top level modules:
 # 	sm_cblock
-# vlog -vlog01compat -work work +incdir+C:/Users/Aluno/Documents/laoc2-pratica5 {C:/Users/Aluno/Documents/laoc2-pratica5/sm_directory.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/aluno/Documents/laoc2-pratica5 {C:/Users/aluno/Documents/laoc2-pratica5/sm_directory.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module sm_directory
 # 
 # Top level modules:
 # 	sm_directory
 # 
-vsim work.sm_cblock
-# vsim work.sm_cblock 
-# Loading work.sm_cblock
-wave create -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/sm_cblock/clock
-wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/sm_cblock/write
-wave modify -driver freeze -pattern constant -value 1 -starttime 25ps -endtime 75ps Edit:/sm_cblock/write
-wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/sm_cblock/miss
-wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/sm_cblock/fetch
-wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/sm_cblock/invalidateIn
-add wave -position end  sim:/sm_cblock/writeMiss
-add wave -position end  sim:/sm_cblock/readMiss
-add wave -position end  sim:/sm_cblock/writeBack
-add wave -position end  sim:/sm_cblock/invalidateOut
-add wave -position end  sim:/sm_cblock/currentState
-run -all
-run
-# Break key hit 
-restart
-run
-run
-restart
-run
-restart
-run
-run
-run
-restart
-restart
+vsim work.sm_directory
+# vsim work.sm_directory 
+# Loading work.sm_directory
+wave create -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/sm_directory/clock
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/sm_directory/writeMiss
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/sm_directory/readMiss
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/sm_directory/writeBack
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/sm_directory/invalidateIn
+add wave -position end  sim:/sm_directory/fetch
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Aluno  Hostname: DECOM_090  ProcessID: 5904
+# 
+#           Attempting to use alternate WLF file "./wlftaxfgd8".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftaxfgd8
+# 
+add wave -position end  sim:/sm_directory/invalidateOut
+add wave -position end  sim:/sm_directory/dataValueReply
+add wave -position end  sim:/sm_directory/sharers
+add wave -position end  sim:/sm_directory/currentState
 run
 run
 run
-wave modify -driver freeze -pattern constant -value 1 -starttime 225ps -endtime 275ps Edit:/sm_cblock/fetch
 run
-restart
 run
 run
 run
 restart
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Aluno/Documents/laoc2-pratica5/simulation/modelsim/wave.do
-wave editwrite -file C:/Users/Aluno/Documents/laoc2-pratica5/simulation/modelsim/wave.do -append
+run
+restart
+restart
+run
+restart
+restart
+run
+restart
+wave modify -driver freeze -pattern constant -value 1 -starttime 25ps -endtime 75ps Edit:/sm_directory/writeMiss
+restart
+run
+wave modify -driver freeze -pattern constant -value 0 -starttime 25ps -endtime 75ps Edit:/sm_directory/writeMiss
+wave modify -driver freeze -pattern constant -value 1 -starttime 25ps -endtime 75ps Edit:/sm_directory/readMiss
+restart
+run
+wave modify -driver freeze -pattern constant -value 0 -starttime 25ps -endtime 75ps Edit:/sm_directory/readMiss
+wave modify -driver freeze -pattern constant -value 1 -starttime 25ps -endtime 75ps Edit:/sm_directory/writeMiss
+restart
+wave modify -driver freeze -pattern constant -value 1 -starttime 125ps -endtime 175ps Edit:/sm_directory/writeMiss
+restart
+run
+run
+restart
+wave modify -driver freeze -pattern constant -value 0 -starttime 125ps -endtime 175ps Edit:/sm_directory/writeMiss
+wave modify -driver freeze -pattern constant -value 1 -starttime 125ps -endtime 175ps Edit:/sm_directory/readMiss
+run
+run
+wave modify -driver freeze -pattern constant -value 0 -starttime 125ps -endtime 175ps Edit:/sm_directory/readMiss
+wave modify -driver freeze -pattern constant -value 1 -starttime 125ps -endtime 175ps Edit:/sm_directory/writeBack
+restart
+run
+run
+restart
+wave modify -driver freeze -pattern constant -value 0 -starttime 25ps -endtime 75ps Edit:/sm_directory/writeMiss
+wave modify -driver freeze -pattern constant -value 1 -starttime 25ps -endtime 75ps Edit:/sm_directory/readMiss
+wave modify -driver freeze -pattern constant -value 0 -starttime 125ps -endtime 175ps Edit:/sm_directory/writeBack
+wave modify -driver freeze -pattern constant -value 1 -starttime 125ps -endtime 175ps Edit:/sm_directory/readMiss
+run
+run
+wave modify -driver freeze -pattern constant -value 0 -starttime 125ps -endtime 175ps Edit:/sm_directory/readMiss
+wave modify -driver freeze -pattern constant -value 1 -starttime 125ps -endtime 175ps Edit:/sm_directory/writeMiss
+restart
+run
+run

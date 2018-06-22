@@ -13,8 +13,8 @@ add wave -noupdate /sm_cblock/currentState
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {0 ps} 0}
 quietly wave cursor active 0
-configure wave -namecolwidth 197
-configure wave -valuecolwidth 42
+configure wave -namecolwidth 192
+configure wave -valuecolwidth 40
 configure wave -justifyvalue left
 configure wave -signalnamewidth 0
 configure wave -snapdistance 10
@@ -27,15 +27,38 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {826 ps}
+WaveRestoreZoom {0 ps} {659 ps}
 view wave 
 wave clipboard store
 wave create -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/sm_cblock/clock 
 wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/sm_cblock/write 
-wave modify -driver freeze -pattern constant -value 1 -starttime 25ps -endtime 75ps Edit:/sm_cblock/write 
 wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/sm_cblock/miss 
 wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/sm_cblock/fetch 
 wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/sm_cblock/invalidateIn 
-wave modify -driver freeze -pattern constant -value 1 -starttime 225ps -endtime 275ps Edit:/sm_cblock/fetch 
+wave modify -driver freeze -pattern constant -value 1 -starttime 25ps -endtime 75ps Edit:/sm_cblock/write 
+wave modify -driver freeze -pattern constant -value 0 -starttime 25ps -endtime 75ps Edit:/sm_cblock/write 
+wave modify -driver freeze -pattern constant -value 1 -starttime 25ps -endtime 75ps Edit:/sm_cblock/write 
+wave modify -driver freeze -pattern constant -value 1 -starttime 125ps -endtime 175ps Edit:/sm_cblock/write 
+wave modify -driver freeze -pattern constant -value 0 -starttime 125ps -endtime 175ps Edit:/sm_cblock/write 
+wave modify -driver freeze -pattern constant -value 1 -starttime 125ps -endtime 175ps Edit:/sm_cblock/write 
+wave modify -driver freeze -pattern constant -value 1 -starttime 125ps -endtime 175ps Edit:/sm_cblock/miss 
+wave modify -driver freeze -pattern constant -value 0 -starttime 125ps -endtime 175ps Edit:/sm_cblock/write 
+wave modify -driver freeze -pattern constant -value 0 -starttime 125ps -endtime 175ps Edit:/sm_cblock/miss 
+wave modify -driver freeze -pattern constant -value 1 -starttime 125ps -endtime 175ps Edit:/sm_cblock/fetch 
+wave modify -driver freeze -pattern constant -value 1 -starttime 125ps -endtime 175ps Edit:/sm_cblock/invalidateIn 
+wave modify -driver freeze -pattern constant -value 0 -starttime 125ps -endtime 175ps Edit:/sm_cblock/fetch 
+wave modify -driver freeze -pattern constant -value 0 -starttime 125ps -endtime 175ps Edit:/sm_cblock/invalidateIn 
+wave modify -driver freeze -pattern constant -value 1 -starttime 125ps -endtime 175ps Edit:/sm_cblock/fetch 
+wave modify -driver freeze -pattern constant -value 0 -starttime 125ps -endtime 175ps Edit:/sm_cblock/write 
+wave modify -driver freeze -pattern constant -value 0 -starttime 25ps -endtime 75ps Edit:/sm_cblock/write 
+wave modify -driver freeze -pattern constant -value 0 -starttime 125ps -endtime 175ps Edit:/sm_cblock/fetch 
+wave modify -driver freeze -pattern constant -value 1 -starttime 125ps -endtime 175ps Edit:/sm_cblock/miss 
+wave modify -driver freeze -pattern constant -value 1 -starttime 125ps -endtime 175ps Edit:/sm_cblock/write 
+wave modify -driver freeze -pattern constant -value 0 -starttime 125ps -endtime 175ps Edit:/sm_cblock/miss 
+wave modify -driver freeze -pattern constant -value 1 -starttime 125ps -endtime 175ps Edit:/sm_cblock/miss 
+wave modify -driver freeze -pattern constant -value 0 -starttime 125ps -endtime 175ps Edit:/sm_cblock/write 
+wave modify -driver freeze -pattern constant -value 0 -starttime 125ps -endtime 175ps Edit:/sm_cblock/miss 
+wave modify -driver freeze -pattern constant -value 1 -starttime 125ps -endtime 175ps Edit:/sm_cblock/invalidateIn 
+wave modify -driver freeze -pattern constant -value 0 -starttime 125ps -endtime 175ps Edit:/sm_cblock/invalidateIn 
 WaveCollapseAll -1
 wave clipboard restore
