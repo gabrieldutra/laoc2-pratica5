@@ -15,6 +15,7 @@ module PraticaV(SW, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7, LEDR, LEDG);
 	wire clock_cblock;
 	wire write_cblock;
 	wire miss_cblock;
+	wire fetch_cblock;
 	wire invalidateIn_cblock;
 
 	// Wires - In Directory
@@ -46,7 +47,8 @@ module PraticaV(SW, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7, LEDR, LEDG);
 	assign clock_cblock = SW[17];
 	assign write_cblock = SW[16];
 	assign miss_cblock = SW[15];
-	assign invalidateIn_cblock = SW[14];
+	assign fetch_cblock = SW[14];
+	assign invalidateIn_cblock = SW[13];
 	
 	assign LEDR[17] = writeMiss_cblock;
 	assign LEDR[16] = readMiss_cblock;

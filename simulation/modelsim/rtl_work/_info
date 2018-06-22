@@ -1,0 +1,66 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Aluno\Documents\laoc2-pratica5\simulation\modelsim
+vPraticaV
+I7TX1L7nljF1Z9:<2jF`7K0
+VCbmbcOVFl:9^2<[CWE5zn2
+Z1 dC:\Users\Aluno\Documents\laoc2-pratica5\simulation\modelsim
+w1529685559
+8C:/Users/Aluno/Documents/laoc2-pratica5/PraticaV.v
+FC:/Users/Aluno/Documents/laoc2-pratica5/PraticaV.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@pratica@v
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/Aluno/Documents/laoc2-pratica5 -O0
+!i10b 1
+!s100 D8dDe;M<Yalj@P8AMLWd01
+!s85 0
+!s108 1529686927.560000
+!s107 C:/Users/Aluno/Documents/laoc2-pratica5/PraticaV.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Aluno/Documents/laoc2-pratica5|C:/Users/Aluno/Documents/laoc2-pratica5/PraticaV.v|
+!s101 -O0
+vsm_cblock
+IYK@PRe3gP2zmP1ZPTY9CH0
+V:zkj`;<SW7IjlhR0Mda=40
+R1
+Z5 w1529684808
+8C:/Users/Aluno/Documents/laoc2-pratica5/sm_cblock.v
+FC:/Users/Aluno/Documents/laoc2-pratica5/sm_cblock.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 `JagonL^lB;kh?dG63LmP2
+!s85 0
+!s108 1529686927.857000
+!s107 C:/Users/Aluno/Documents/laoc2-pratica5/sm_cblock.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Aluno/Documents/laoc2-pratica5|C:/Users/Aluno/Documents/laoc2-pratica5/sm_cblock.v|
+!s101 -O0
+vsm_directory
+!i10b 1
+!s100 HU3Hj;HSE7:=8hWBID6L02
+IGIQLE86@gm7FOEO68`Thc3
+VZh@@I:T@GDX6iJIXDe7b61
+R1
+R5
+8C:/Users/Aluno/Documents/laoc2-pratica5/sm_directory.v
+FC:/Users/Aluno/Documents/laoc2-pratica5/sm_directory.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1529686928.013000
+!s107 C:/Users/Aluno/Documents/laoc2-pratica5/sm_directory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Aluno/Documents/laoc2-pratica5|C:/Users/Aluno/Documents/laoc2-pratica5/sm_directory.v|
+!s101 -O0
+R3
+R4
