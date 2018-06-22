@@ -1,4 +1,4 @@
-module sm_cpu(
+module sm_cblock(
 	clock,
 	write,
 	miss,

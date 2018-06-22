@@ -1,4 +1,4 @@
-module sm_diretory(
+module sm_directory(
 	clock,
 	writeMiss,
 	readMiss,
@@ -7,6 +7,7 @@ module sm_diretory(
 	fetch,
 	invalidateOut,
 	dataValueReply,
+	sharers,
 	currentState
 );
 
@@ -19,6 +20,7 @@ module sm_diretory(
 	output reg fetch;
 	output reg invalidateOut;
 	output reg dataValueReply;
+	output reg[1:0] sharers;
 	output reg[1:0] currentState;
 	
 	initial begin
@@ -26,6 +28,8 @@ module sm_diretory(
 		invalidateOut = 0;
 		dataValueReply = 0;
 		currentState = 2'b00; // DI
+		sharers = 2'b00;
+		// Sharers = {}
 	end
 	
 	always @(posedge clock)
@@ -41,11 +45,15 @@ module sm_diretory(
 				begin
 					dataValueReply = 1;
 					currentState = 2'b01; // DS
+					sharers = 2'b01;
+					// Sharers = {P}
 				end
 				else if(writeMiss)
 				begin
 					dataValueReply = 1;
 					currentState = 2'b10; // DM
+					sharers = 2'b01;
+					// Sharers = {P}
 				end
 			end
 			2'b01: // DS
@@ -54,12 +62,16 @@ module sm_diretory(
 				begin
 					dataValueReply = 1;
 					currentState = 2'b01; // DS
+					sharers = 2'b11;
+					// Sharers = Sharers + {P}
 				end
 				else if(writeMiss)
 				begin
 					dataValueReply = 1;
 					invalidateOut = 1;
 					currentState = 2'b10; // DM
+					sharers = 2'b01;
+					// Sharers = {P}
 				end
 			end
 			2'b10: // DM
@@ -69,6 +81,8 @@ module sm_diretory(
 					fetch = 1;
 					dataValueReply = 1;
 					currentState = 2'b01; // DS
+					sharers = 2'b11;
+					// Sharers = Sharers + {P}
 				end
 				else if(writeMiss)
 				begin
@@ -76,10 +90,14 @@ module sm_diretory(
 					invalidateOut = 1;
 					dataValueReply = 1;
 					currentState = 2'b10; // DM
+					sharers = 2'b01;
+					// Sharers = {P}
 				end
 				else if(writeBack)
 				begin
 					currentState = 2'b00; // DI
+					sharers = 2'b00;
+					// Sharers = {}
 				end
 			end
 		endcase
