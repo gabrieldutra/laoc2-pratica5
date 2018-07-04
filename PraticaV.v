@@ -18,6 +18,7 @@ module PraticaV(SW, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7, LEDR, LEDG);
 	wire [2:0] address;
 	wire [3:0] data_in;
 	
+	wire [3:0] data_out;	
 	wire [1:0] current_state;
 	wire [1:0] current_owner;
 	wire [2:0] current_address;
@@ -25,5 +26,6 @@ module PraticaV(SW, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7, LEDR, LEDG);
 	
 	cache_P(clock, write, state, address, data_in, current_state, current_address, current_data);
 	cache_D(clock, write, state, owner, address, data_in, current_state, current_owner, current_address, current_data);
+	memory(clock, write, address, data_in, data_out);
 
 endmodule

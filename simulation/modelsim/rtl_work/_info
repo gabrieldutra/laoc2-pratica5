@@ -2,65 +2,87 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\Aluno\Documents\laoc2-pratica5\simulation\modelsim
-vPraticaV
-I7TX1L7nljF1Z9:<2jF`7K0
-VCbmbcOVFl:9^2<[CWE5zn2
-Z1 dC:\Users\Aluno\Documents\laoc2-pratica5\simulation\modelsim
-Z2 w1530291741
-8C:/Users/Aluno/Documents/laoc2-pratica5/PraticaV.v
-FC:/Users/Aluno/Documents/laoc2-pratica5/PraticaV.v
+Z0 dC:\Users\Bruno Damacena\Documents\laoc2-pratica5\simulation\modelsim
+vcache_D
+I6]BaJGlV<hV6JQIBG=1m81
+V@Q23O4[zDNZ>c0l_K_XEa1
+Z1 dC:\Users\Bruno Damacena\Documents\laoc2-pratica5\simulation\modelsim
+Z2 w1530662853
+8C:/Users/Bruno Damacena/Documents/laoc2-pratica5/cache_D.v
+FC:/Users/Bruno Damacena/Documents/laoc2-pratica5/cache_D.v
 L0 1
 Z3 OV;L;10.1d;51
 r1
 31
 Z4 o-vlog01compat -work work -O0
+Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/Bruno Damacena/Documents/laoc2-pratica5} -O0
+ncache_@d
+!i10b 1
+!s100 DcKI<Zc0CEh<H;g<JiWda0
+!s85 0
+!s108 1530666704.641000
+!s107 C:/Users/Bruno Damacena/Documents/laoc2-pratica5/cache_D.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Bruno Damacena/Documents/laoc2-pratica5|C:/Users/Bruno Damacena/Documents/laoc2-pratica5/cache_D.v|
+!s101 -O0
+vcache_P
+I]9bgV9MEZB6;e1WNPhd=?0
+VSMSGHa>5i`R``cAaGJdNc0
+R1
+R2
+8C:/Users/Bruno Damacena/Documents/laoc2-pratica5/cache_P.v
+FC:/Users/Bruno Damacena/Documents/laoc2-pratica5/cache_P.v
+L0 1
+R3
+r1
+31
+R4
+R5
+ncache_@p
+!i10b 1
+!s100 Y9VJ_T_nXLh77<DZnZjeQ2
+!s85 0
+!s108 1530666704.485000
+!s107 C:/Users/Bruno Damacena/Documents/laoc2-pratica5/cache_P.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Bruno Damacena/Documents/laoc2-pratica5|C:/Users/Bruno Damacena/Documents/laoc2-pratica5/cache_P.v|
+!s101 -O0
+vmemory
+!i10b 1
+!s100 dGd=S=kdi89gC^UiFPa5[0
+IaoQSk9?;YUV4Zlo:XT88Z2
+V1XjZPSh64Wfh5ES1EaOS31
+R1
+w1530666641
+8C:/Users/Bruno Damacena/Documents/laoc2-pratica5/memory.v
+FC:/Users/Bruno Damacena/Documents/laoc2-pratica5/memory.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1530666704.809000
+!s107 C:/Users/Bruno Damacena/Documents/laoc2-pratica5/memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Bruno Damacena/Documents/laoc2-pratica5|C:/Users/Bruno Damacena/Documents/laoc2-pratica5/memory.v|
+!s101 -O0
+R4
+R5
+vPraticaV
+ImC_[cNfSX>_UIS4zAl3Cb0
+VCbmbcOVFl:9^2<[CWE5zn2
+R1
+w1530664700
+8C:/Users/Bruno Damacena/Documents/laoc2-pratica5/PraticaV.v
+FC:/Users/Bruno Damacena/Documents/laoc2-pratica5/PraticaV.v
+L0 1
+R3
+r1
+31
+R4
 n@pratica@v
-Z5 !s92 -vlog01compat -work work +incdir+C:/Users/Aluno/Documents/laoc2-pratica5 -O0
-!i10b 1
-!s100 D8dDe;M<Yalj@P8AMLWd01
-!s85 0
-!s108 1530287117.702000
-!s107 C:/Users/Aluno/Documents/laoc2-pratica5/PraticaV.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Aluno/Documents/laoc2-pratica5|C:/Users/Aluno/Documents/laoc2-pratica5/PraticaV.v|
-!s101 -O0
-vsm_cblock
-IYK@PRe3gP2zmP1ZPTY9CH0
-V:zkj`;<SW7IjlhR0Mda=40
-R1
-R2
-8C:/Users/Aluno/Documents/laoc2-pratica5/sm_cblock.v
-FC:/Users/Aluno/Documents/laoc2-pratica5/sm_cblock.v
-L0 1
-R3
-r1
-31
-R4
 R5
 !i10b 1
-!s100 `JagonL^lB;kh?dG63LmP2
+!s100 ``NV1X6jLI9RXd`]0R_E43
 !s85 0
-!s108 1530287117.905000
-!s107 C:/Users/Aluno/Documents/laoc2-pratica5/sm_cblock.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Aluno/Documents/laoc2-pratica5|C:/Users/Aluno/Documents/laoc2-pratica5/sm_cblock.v|
+!s108 1530666704.218000
+!s107 C:/Users/Bruno Damacena/Documents/laoc2-pratica5/PraticaV.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Bruno Damacena/Documents/laoc2-pratica5|C:/Users/Bruno Damacena/Documents/laoc2-pratica5/PraticaV.v|
 !s101 -O0
-vsm_directory
-!i10b 1
-!s100 HU3Hj;HSE7:=8hWBID6L02
-IGIQLE86@gm7FOEO68`Thc3
-VZh@@I:T@GDX6iJIXDe7b61
-R1
-R2
-8C:/Users/Aluno/Documents/laoc2-pratica5/sm_directory.v
-FC:/Users/Aluno/Documents/laoc2-pratica5/sm_directory.v
-L0 1
-R3
-r1
-!s85 0
-31
-!s108 1530287117.999000
-!s107 C:/Users/Aluno/Documents/laoc2-pratica5/sm_directory.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Aluno/Documents/laoc2-pratica5|C:/Users/Aluno/Documents/laoc2-pratica5/sm_directory.v|
-!s101 -O0
-R4
-R5
